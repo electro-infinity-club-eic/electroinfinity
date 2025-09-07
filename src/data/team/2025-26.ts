@@ -34,7 +34,7 @@ export const team2025_26: TeamYear = {
     {
       id: "core-1",
       name: "Atharav Kale",
-      role: "President",
+      role: "",
       image: "/team/2025-26/atharav.jpg",
       deptOrBranch: "",
       social: { linkedin: "", instagram: "", email: "" },
