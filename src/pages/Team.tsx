@@ -8,8 +8,6 @@ const Teams: React.FC = () => {
 
   return (
     <section className="bg-[#0f1f3d] min-h-screen pt-32 pb-16 px-6">
-      {/* Removed "Our Team" heading as requested */}
-
       <div className="mt-16">
         <TeamSection
           facultyAdvisors={activeTeam.facultyAdvisors}

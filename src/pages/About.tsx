@@ -34,7 +34,7 @@ const AboutClub: React.FC = () => {
           className="space-y-6"
         >
           <p className="text-blue-100 text-base sm:text-lg leading-relaxed hover:scale-[1.01] hover:text-cyan-200 transition duration-300">
-            In an era of rapid technological advancement, the{" "}
+            In an era of rapid technological advancement, {" "}
             <span className="bg-gradient-to-r from-amber-400 to-yellow-500 text-transparent bg-clip-text font-semibold">
               Electro Infinity Club (EIC)
             </span>{" "}
