@@ -30,10 +30,16 @@ const Contact: React.FC = () => {
 
     emailjs
       .send(
-        process.env.REACT_APP_SERVICE_ID!,
-        process.env.REACT_APP_TEMPLATE_ID!,
-        formData,
-        process.env.REACT_APP_USER_ID!
+        "service_tc8yx86", // Service ID
+        "template_iu4xfe7", // Template ID
+        {
+          name: formData.name,
+          email: formData.email,
+          title: formData.subject,
+          message: formData.message,
+          time: new Date().toLocaleString(),
+        },
+        "_1C40aQeRc6EUSbN5" // Public Key
       )
       .then(
         () => {
@@ -71,8 +77,11 @@ const Contact: React.FC = () => {
             rel="noopener noreferrer"
             className="flex items-center gap-3 transition group cursor-pointer"
           >
-          <FaGithub size={28} className="transition-colors duration-300 group-hover:text-gray-400" />
-          <span className="group-hover:text-gray-400">Github</span>
+            <FaGithub
+              size={28}
+              className="transition-colors duration-300 group-hover:text-gray-400"
+            />
+            <span className="group-hover:text-gray-400">Github</span>
           </a>
 
           <a
@@ -81,7 +90,10 @@ const Contact: React.FC = () => {
             rel="noopener noreferrer"
             className="flex items-center gap-3 transition group cursor-pointer"
           >
-            <FaLinkedin size={28} className="transition-colors duration-300 group-hover:text-blue-500" />
+            <FaLinkedin
+              size={28}
+              className="transition-colors duration-300 group-hover:text-blue-500"
+            />
             <span className="group-hover:text-blue-500">LinkedIn</span>
           </a>
 
@@ -91,7 +103,10 @@ const Contact: React.FC = () => {
             rel="noopener noreferrer"
             className="flex items-center gap-3 transition group cursor-pointer"
           >
-            <FaInstagram size={28} className="transition-colors duration-300 group-hover:text-pink-500" />
+            <FaInstagram
+              size={28}
+              className="transition-colors duration-300 group-hover:text-pink-500"
+            />
             <span className="group-hover:text-pink-500">Instagram</span>
           </a>
 
@@ -101,7 +116,10 @@ const Contact: React.FC = () => {
             rel="noopener noreferrer"
             className="flex items-center gap-3 transition group cursor-pointer"
           >
-            <FaYoutube size={28} className="transition-colors duration-300 group-hover:text-red-500" />
+            <FaYoutube
+              size={28}
+              className="transition-colors duration-300 group-hover:text-red-500"
+            />
             <span className="group-hover:text-red-500">YouTube</span>
           </a>
         </div>
@@ -112,7 +130,10 @@ const Contact: React.FC = () => {
             href="mailto:electroinfinityclub@gmail.com"
             className="flex items-center gap-3 transition group cursor-pointer"
           >
-            <FaEnvelope size={24} className="transition-colors duration-300 group-hover:text-cyan-300" />
+            <FaEnvelope
+              size={24}
+              className="transition-colors duration-300 group-hover:text-cyan-300"
+            />
             <span className="transition-colors duration-300 group-hover:text-cyan-300">
               electroinfinityclub@gmail.com
             </span>
@@ -124,7 +145,10 @@ const Contact: React.FC = () => {
             rel="noopener noreferrer"
             className="flex items-center gap-3 transition group cursor-pointer"
           >
-            <FaMapMarkerAlt size={24} className="transition-colors duration-300 group-hover:text-cyan-300" />
+            <FaMapMarkerAlt
+              size={24}
+              className="transition-colors duration-300 group-hover:text-cyan-300"
+            />
             <span className="transition-colors duration-300 group-hover:text-cyan-300">
               M.E.S Wadia College of Engineering, Pune
             </span>

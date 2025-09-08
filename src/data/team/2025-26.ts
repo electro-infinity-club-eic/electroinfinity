@@ -15,7 +15,7 @@ export const team2025_26: TeamYear = {
       id: "fac-2",
       name: "Prof. Yogita Ajgar",
       role: "Faculty Coordinator",
-      image: "/team/common/yogita-mam.webp",
+      image: "/team/common/yogita-mam.jpg",
       deptOrBranch: "E&TC Department",
       social: { linkedin: "https://linkedin.com/in/yogita-ajgar-847b1071" },
     },
