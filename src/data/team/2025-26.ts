@@ -118,7 +118,7 @@ export const team2025_26: TeamYear = {
       role: "Web Developer",
       image: "/team/2025-26/gaytri.jpg",
       deptOrBranch: "Computer Department",
-      social: { linkedin: "https://www.linkedin.com/in/gaytri-hande-969992328?", instagram: "https://www.instagram.com/gaytri.h 1506?", email: "handegaytri1@gmail.com" },
+      social: { linkedin: "https://www.linkedin.com/in/gaytri-hande-969992328?", instagram: "https://www.instagram.com/gaytri.h1506?", email: "handegaytri1@gmail.com" },
     },
     {
       id: "core-12",
