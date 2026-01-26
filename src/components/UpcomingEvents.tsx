@@ -34,13 +34,10 @@ const UpcomingEvents: React.FC = () => {
           />
         </div>
         <div className="p-5">
-          <h3 className="text-xl font-bold text-gray-800 mb-2">AptiVerse</h3>
+          <h3 className="text-xl font-bold text-gray-800 mb-2">EV-UNPLUGGED</h3>
           <p className="text-sm text-gray-500 mb-1">8th August 2025</p>
           <p className="text-sm text-gray-700 mb-3 line-clamp-3">
-            AptiVerse is a competitive event designed to sharpen your aptitude,
-            logical reasoning, and problem-solving skills. It’s the ultimate
-            prep challenge for acing placement tests and cracking top company
-            assessments.
+            
           </p>
          <a
         href="https://forms.gle/4eq6S5KnHYhLGY4M9"
