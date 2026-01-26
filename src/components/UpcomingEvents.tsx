@@ -14,7 +14,7 @@ const UpcomingEvents: React.FC = () => {
         ===============================
       */}
 
-      {/*
+      
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-cyan-300 mb-8 text-center">
         Upcoming Events
       </h2>
@@ -28,7 +28,7 @@ const UpcomingEvents: React.FC = () => {
       >
         <div className="overflow-hidden">
           <img
-            src="/event-images/event-20.jpg"
+            src="/event-images/event-21.png"
             alt="Tech Workshop 2025"
             className="w-full aspect-square object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
           />
@@ -42,9 +42,20 @@ const UpcomingEvents: React.FC = () => {
             prep challenge for acing placement tests and cracking top company
             assessments.
           </p>
+         <a
+        href="https://forms.gle/4eq6S5KnHYhLGY4M9"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-4 inline-block w-full text-center px-4 py-2 
+             rounded-lg bg-cyan-500 text-white font-semibold 
+             hover:bg-cyan-600 transition"
+>
+  Register Now
+</a>
+ 
         </div>
       </motion.div>
-      */}
+     
 
       {/*
         ===============================
@@ -53,7 +64,7 @@ const UpcomingEvents: React.FC = () => {
         ===============================
       */}
 
-      <motion.div
+      {/*<motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
@@ -69,7 +80,7 @@ const UpcomingEvents: React.FC = () => {
           </span>
           !
         </p>
-      </motion.div>
+      </motion.div>*/}
     </section>
   );
 };
