@@ -1,5 +1,14 @@
 const events = [
   {
+    id: 21,
+    img: "/event-images/event-21.png",
+    title: "EV-Unpugged",
+    date: "30th january 2026",
+    info: "EIC organizes EV Unplugged, a session introducing electric vehicle technology, e-mobility trends, and future opportunities in the EV domain",
+    link: "https://example.com/register",
+    open: true,
+  },
+  {
     id: 20,
     img: "/event-images/event-20.jpg",
     title: "APTIVERSE",
@@ -174,6 +183,7 @@ const events = [
     link: "https://example.com/register",
     open: true,
   },
+  
 ];
 
 export default events;

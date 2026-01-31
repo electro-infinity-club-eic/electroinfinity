@@ -1,7 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const HeroSection: React.FC = () => {
+interface HeroSectionProps {
+  onViewEvents?: () => void;
+}
+
+const HeroSection: React.FC<HeroSectionProps> = ({ onViewEvents }) => {
   const cardData = [
     {
       title: "Mission",
@@ -42,19 +46,32 @@ const HeroSection: React.FC = () => {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          className="text-center md:text-left max-w-xl"
+          className="text-center md:text-left max-w-xl px-2 sm:px-0"
         >
-          <div className="flex flex-col items-center text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-cyan-200 whitespace-nowrap">
-              ELECTRO INFINITY CLUB
-            </h1>
+          {/* <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-cyan-200 border-b-4 border-cyan-400 pb-2 whitespace-nowrap">
+            ELECTRO INFINITY CLUB
+          </h1>
+          <p className="text-xl sm:text-xl md:text-xl">Building Tomorrow Together</p> */}
 
-            <p className="text-sm sm:text-base md:text-lg text-cyan-100 mt-1">
-              Building Tomorrow Together
-            </p>
+<div className="flex flex-col items-center text-center">
+  {/* Club Name */}
+  <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-cyan-200 whitespace-nowrap">
+    ELECTRO INFINITY CLUB
+  </h1>
 
-            <div className="w-80 sm:w-[28rem] md:w-[40rem] border-b-4 border-cyan-400 mt-2"></div>
-          </div>
+  {/* Tagline */}
+  <p className="text-sm sm:text-base md:text-lg text-cyan-100 mt-1">
+    Building Tomorrow Together
+  </p>
+
+  {/* Underline */}
+  <div className="w-80 sm:w-[28rem] md:w-[40rem] border-b-4 border-cyan-400 mt-2"></div>
+</div>
+
+
+
+
+
 
           <h2 className="mt-4 text-base sm:text-lg md:text-2xl font-semibold">
             <span className="neon-yellow">OFFICIAL CLUB OF</span>
@@ -71,20 +88,30 @@ const HeroSection: React.FC = () => {
         </motion.div>
       </div>
 
-      {/* Mission / Objective / Vision */}
-      <div className="relative z-10 mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl px-4">
+      {/* Mission, Objective, Vision Cards */}
+      <div className="relative z-10 mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 w-full max-w-6xl px-4">
         {cardData.map((card, index) => (
           <motion.div
             key={index}
             whileHover={{ scale: 1.05 }}
-            className="bg-white/10 border border-cyan-400 rounded-xl p-6 shadow-lg hover:shadow-cyan-400/40 transition"
+            className="bg-white/10 border border-cyan-400 rounded-xl p-5 sm:p-6 shadow-lg hover:shadow-cyan-400/40 transition duration-300"
           >
-            <h3 className="text-xl font-bold text-cyan-300 mb-3">
+            <h3 className="text-xl sm:text-2xl font-bold text-cyan-300 mb-3">
               {card.title}
             </h3>
-            <p className="text-blue-100">{card.text}</p>
+            <p className="text-blue-100 text-sm sm:text-base">{card.text}</p>
           </motion.div>
         ))}
+      </div>
+
+      {/* Upcoming Events Button */}
+      <div className="relative z-10 mt-10 sm:mt-14">
+        <button
+          onClick={onViewEvents}
+          className="px-5 sm:px-6 py-2 sm:py-3 bg-cyan-400 text-[#0f1f3d] font-semibold rounded-lg shadow-md hover:bg-cyan-300 transition duration-300 text-sm sm:text-base"
+        >
+          View Upcoming Events
+        </button>
       </div>
     </section>
   );
