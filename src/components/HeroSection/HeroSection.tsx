@@ -118,7 +118,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onViewEvents }) => {
   className="relative z-10 mt-10 sm:mt-14 inline-block px-5 sm:px-6 py-2 sm:py-3 bg-cyan-400 text-[#0f1f3d] font-semibold rounded-lg shadow-md text-sm sm:text-base cursor-default select-none"
   style={{ pointerEvents: "none" }} // disables clicking
 >
-  NewEvents
+  UpcomingEvents
 </div>
     </section>
   );

@@ -1,31 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import HeroSection from "../components/HeroSection/HeroSection";
-import NewEvents from "../components/newevents";
-import ParticlesBG from "../components/HeroSection/ParticlesBG";
-import CircuitBG from "../components/HeroSection/CircuitBG";
+import UpcomingEvents from "../components/UpcomingEvents";
 
 const Home: React.FC = () => {
   const [showEvents, setShowEvents] = useState(false);
 
   const handleViewEvents = () => {
-    setShowEvents((prev) => !prev);
-    setTimeout(() => {
-      const eventsSection = document.getElementById("events");
-      if (eventsSection) {
-        eventsSection.scrollIntoView({ behavior: "smooth" });
-      }
-    }, 100);
+    setShowEvents(true);
   };
 
-  return (
-    <div className="relative bg-[#0f1f3d] min-h-screen overflow-hidden">
-      {/* Background */}
-      <CircuitBG />
-      <ParticlesBG />
+  useEffect(() => {
+    if (showEvents) {
+      const section = document.getElementById("events");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [showEvents]);
 
-      {/* Content */}
+  return (
+    <div className="bg-[#0f1f3d] min-h-screen">
       <HeroSection onViewEvents={handleViewEvents} />
-      {showEvents && <NewEvents />}
+      {showEvents && <UpcomingEvents />}
     </div>
   );
 };
