@@ -80,7 +80,7 @@ const HeroSection: React.FC = () => {
       </div>
 
       {/* Poster Section */}
-      <div className="relative z-10 mt-20 w-full max-w-6xl">
+      <div className="relative z-10 mt-2 w-full max-w-6xl">
         <UpcomingEvents />
       </div>
 
