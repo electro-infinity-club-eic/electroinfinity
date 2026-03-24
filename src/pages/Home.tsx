@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import HeroSection from "../components/HeroSection/HeroSection";
-import UpcomingEvents from "../components/UpcomingEvents";
+import NewEvents from "../components/newevents";
 import ParticlesBG from "../components/HeroSection/ParticlesBG";
 import CircuitBG from "../components/HeroSection/CircuitBG";
 
@@ -25,7 +25,7 @@ const Home: React.FC = () => {
 
       {/* Content */}
       <HeroSection onViewEvents={handleViewEvents} />
-      {showEvents && <UpcomingEvents />}
+      {showEvents && <NewEvents />}
     </div>
   );
 };

@@ -105,14 +105,21 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onViewEvents }) => {
       </div>
 
       {/* Upcoming Events Button */}
-      <div className="relative z-10 mt-10 sm:mt-14">
+      {/* <div className="relative z-10 mt-10 sm:mt-14">
         <button
           onClick={onViewEvents}
           className="px-5 sm:px-6 py-2 sm:py-3 bg-cyan-400 text-[#0f1f3d] font-semibold rounded-lg shadow-md hover:bg-cyan-300 transition duration-300 text-sm sm:text-base"
         >
           View Upcoming Events
         </button>
-      </div>
+      </div> */}
+      {/* Non-clickable NEW EVENT text */}
+<div
+  className="relative z-10 mt-10 sm:mt-14 inline-block px-5 sm:px-6 py-2 sm:py-3 bg-cyan-400 text-[#0f1f3d] font-semibold rounded-lg shadow-md text-sm sm:text-base cursor-default select-none"
+  style={{ pointerEvents: "none" }} // disables clicking
+>
+  NewEvents
+</div>
     </section>
   );
 };
