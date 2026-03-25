@@ -5,7 +5,7 @@ const UpcomingEvents: React.FC = () => {
   const events = [
     {
       title: "Liftoff",
-      date: "Tuesday-2nd April",
+      date: "Thursday-2nd April",
       image: "/event-images/event-22.jpg",
       footnote: "Registrations are open. Limited seats available!", // 👈 edit this anytime
     },
