@@ -1,9 +1,18 @@
 const events = [
   {
+    id: 22,
+    img: "/event-images/event-22.jpg",
+    title: "LIFTOFF",
+    date: "2nd April 2026",
+    info: "A hands-on drone workshop where participants build their own drone and learn precision flying skills, offering a complete experience in drone technology and practical applications.",
+    link: "https://example.com/register",
+    open: true,
+  },
+  {
     id: 21,
     img: "/event-images/event-21.png",
     title: "EV-Unpugged",
-    date: "30th january 2026",
+    date: "30th January 2026",
     info: "EIC organizes EV Unplugged, a session introducing electric vehicle technology, e-mobility trends, and future opportunities in the EV domain",
     link: "https://example.com/register",
     open: true,
@@ -183,6 +192,7 @@ const events = [
     link: "https://example.com/register",
     open: true,
   },
+  
   
 ];
 
